@@ -16,6 +16,6 @@ kickstarter.css("li.project.grid_4").each do |project|
     :location => project.css("span.location-name").text,
     :percent_funded => project.css('ul.project-stats li.first.funded strong").text.gsub("%", "").to_i
   }
-end
+  end
   projects
 end
